@@ -1,0 +1,120 @@
+.main_Contener {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contener {
+  color: white;
+  background-color: white;
+  height: 25rem;
+  width: 35rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Icon {
+  font-size: 9rem;
+  display: inline-block;
+  color: tomato;
+  height: 10rem;
+  width: 100%;
+  text-align: center;
+}
+.Temp_date_contener {
+  height: 9rem;
+  display: flex;
+}
+.Temp_data {
+  background-color: black;
+  width: 60%;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.Temp_data > h1 {
+  font-size: 3rem;
+}
+.Temp_data > h2 {
+  font-size: 1.6rem;
+}
+.location {
+  position: relative;
+  right: 0.3rem;
+}
+.date_time {
+  background-color: tomato;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Last_contener {
+  color: tomato;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+}
+
+.Weather_moreInfo {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 3rem;
+}
+
+.Weather_moreInfo h6 {
+  color: black;
+  font-size: 1rem;
+  font-weight: 501;
+}
+
+/* -------------------------Responsive----------------------------- */
+
+@media Only screen and (max-width: 520px) {
+  .contener {
+    height:36rem;
+    width: 23.1rem;
+  }
+  .Last_contener {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    height: 6rem;
+  }
+  .Weather_moreInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 3rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0.7rem;
+  }
+ 
+  .Temp_date_contener {
+    height: 15rem;
+    flex-direction: column;
+  }
+
+  .Temp_data {
+    height: 8rem;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.9rem;
+  }
+  .date_time {
+    width: 100%;
+    height: 8rem;
+  }
+  .location {
+    position: relative;
+    top: 1.7rem;
+    right: 5.8rem;
+  }
+}
